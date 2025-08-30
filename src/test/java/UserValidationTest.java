@@ -1,8 +1,20 @@
 import org.testng.Assert;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 
 public class UserValidationTest {
+	@BeforeClass
+	public void m1()
+	{
+		System.out.println("Before Class");
+	}
+	@AfterClass
+	public void m2()
+	{
+		System.out.println("After Class");
+	}
 	@Test
 	public void testCase1()
 	{
